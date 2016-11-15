@@ -1,0 +1,47 @@
+.btn-blue-no-padding-arrow-link {
+
+    color: $blue;
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 0;
+    padding: 0 !important;
+
+    &,
+    &:active,
+    &.active,
+    &[disabled],
+    fieldset[disabled] & {
+        color: $blue;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: transparent;
+    }
+
+    &:hover,
+    &:focus {
+          /*color: $red;
+        text-decoration: underline;*/
+          color:$blue;
+          text-decoration: none;
+        background-color: transparent;
+    }
+
+    &[disabled],
+    fieldset[disabled] & {
+        &:hover,
+        &:focus {
+            color: $grey;
+            text-decoration: none;
+        }
+    }
+
+    &:after {
+           content: "\00a0\203A";
+    }
+}

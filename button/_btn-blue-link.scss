@@ -1,0 +1,39 @@
+.btn-blue-link {
+    color: $blue;
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 0;
+
+    &,
+    &:active,
+    &.active,
+    &[disabled],
+    fieldset[disabled] & {
+        color: $blue;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+        &,
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: transparent;
+        }
+
+            &:hover,
+            &:focus {
+                color: $white;
+                text-decoration: underline;
+                background-color: transparent;
+            }
+
+            &[disabled],
+            fieldset[disabled] & {
+                &:hover,
+                &:focus {
+                    color: $grey;
+                    text-decoration: none;
+                }
+            }
+}

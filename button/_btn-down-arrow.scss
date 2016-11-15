@@ -1,0 +1,40 @@
+
+.btn-down-arrow {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px 10px;
+    border: 0 solid transparent;
+    border-radius: 0;
+    background: linear-gradient(to bottom, $white, $white);
+    color: $view-more-button;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $view-more-button;
+        text-decoration: none;
+    }
+
+    &:active,
+    &.active {
+        background: $white;
+        background-image: none;
+        text-decoration: none;
+    }
+
+    &:after {
+        content: "\e026";
+        display: inline-block;
+        height: 24px;
+        width: 24px;
+        line-height: 24px;
+        margin: 0 0 -6px 15px;
+        position: relative;
+        top: 0;
+        left: 0;
+        font-family: 'Glyphicons Halflings';
+        // background: url("../img/Down_Arrow_38x38.png") no-repeat left center transparent;
+        background-size: 100% 100%;
+    }
+}

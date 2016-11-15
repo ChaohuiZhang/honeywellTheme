@@ -1,0 +1,79 @@
+.btn-filter, .CoveoSearchInterface .page-filter-trigger {
+
+  display: inline-block;
+  color: white;
+  margin-bottom: 0;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  background: $links;
+  border: 1px solid $links;
+  white-space: nowrap;
+  @include button-size($padding-base-vertical,$padding-base-horizontal,$font-size-base,$line-height-base,0);
+  @include user-select(none);
+  .glyphicon {
+    display: none;
+  }
+  &,
+  &:active,
+  &.active {
+    text-decoration: none;
+
+    &:focus,
+    &.focus {
+      @include tab-focus();
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &.focus {
+    text-decoration: none;
+    color: white;
+  }
+
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+    text-decoration: none;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: $grey;
+    pointer-events: none;
+    @include opacity(.65);
+    @include box-shadow(none);
+  }
+
+  &:after {
+    content: "\203A";
+    text-align: right;
+    float: none;
+    padding-left: 10px;
+  }
+
+  &.selected, &.js-filter-active {
+    &:after {
+      content: "\2335";
+      text-align: right;
+      float: none;
+      padding-left: 10px;
+    }
+  }
+}
+.page-filter-trigger.js-filter-active .page-filter-close {
+  display: none!important;
+}
+.page-filter-trigger:after {
+  font-size: 16px;
+}
+//Video landing page filter and view button
+.video-filter-buttons .btn-filter:not(:first-child) {
+  margin-left: 15px;
+}
