@@ -1,34 +1,130 @@
 // general
 
+@mixin generate-flexy-display() {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin generate-flex() {
+  @include generate-flexy-display();
+  -ms-flex: 1;
+  flex: 1;
+}
+
+@mixin generate-flex-wrap($value) {
+
+    -ms-flex-wrap: $value;
+    -webkit-flex-wrap: $value;
+    flex-wrap: $value;
+}
+
+@mixin generate-flex-prop($value) {
+
+    -ms-flex: $value;
+    -webkit-flex: $value;
+    flex: $value;
+}
+
+@mixin generate-align-items($value) {
+
+    -ms-align-items: $value;
+    -webkit-align-items: $value;
+    align-items: $value;
+}
+
+@mixin generate-right-justified-cross() {
+  content: "\2716";
+  text-align: right;
+  float: right;
+  position: absolute;
+  display: block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 5%;
+}
+
+// grid
+// Generate the small columns
+@mixin make-sm-column-with-clear($columns, $gutter: $grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  ($gutter / 2);
+  padding-right: ($gutter / 2);
+
+ @media only screen and (min-width : $screen-sm-min) and (max-width: $screen-md-min){
+      clear:both;
+    float: left;
+    width: percentage(($columns / $grid-columns));
+  }
+}
 
 
-// button
-		// btn blue
-    $blue: #1792e5;
-    $white: #ffffff;
-    $grey: #808080;
-		
-		// _btn-blue-no-padding-arrow-link
-    $red: #ff0000;
+.score-page {
 
-    // _btn-dark-grey
-    $dark-grey: #464646;
+&.score-column4-equal {
+    & > .score-side {
+      @include make-sm-column(6);
+    }
+    & > .score-main {
+      @include make-sm-column(6);
+    }
+    & > .score-main2 {
+      @include make-sm-column-with-clear(6);
+    }
+    & > .score-side2 {
+      @include make-sm-column(6);
+    }
+  }
 
-    // _btn-down-arrow
-    $black:#000000;
-    $view-more-button: #7a7a7a;
+&.score-column3-equal {
+    & > .score-side {
+      @include make-sm-column(6);
+    }
+    & > .score-main {
+      @include make-sm-column(6);
+    }
+    & > .score-side2 {
+      @include make-sm-column-with-clear(6);
+    }
+  }
+  
 
+
+}
 
 // link
+@mixin link-pipe-separator() {
+    content: "|";
+    padding: 0 7px 0 10px;
+    color: black;
+}
 
+//mosaic
+// @mixin tile-title-font() {
+//   font-family: 'HoneywellSans-Bold';
+//   font-size: 22px;
+//   display: inline-block;
+//   padding-left: 15px;
+//   overflow: hidden;
+//   width: 100%;
+//   word-wrap: break-word;
+// }
 
+// @mixin tile-base-font() {
+//   font-family: 'HoneywellSans-Medium';
+//   font-size: 14px;
+//   padding-left: 15px;
 
-// text
+//   span {
+//     width: 10px;
+//     font-size: 15px;
+//   }
+// }
 
-
-
-// style box
-
-
-
-// highlight
+// @mixin mosaic-tile-transparency() {
+//   background-color: rgba(0, 0, 0, 0.5);
+// }
