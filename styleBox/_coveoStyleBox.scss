@@ -1,0 +1,124 @@
+//coveo
+.coveo-logo{
+    background:url("http://rzheng.chinaeast.cloudapp.chinacloudapi.cn/-/media/Images/HonCN/logo/honeywell_logo-png.png") no-repeat 0 0 !important;
+}
+.coveo-breadcrumb-clear-all{
+    overflow: hidden;
+}
+.globalSearchResult .coveo-results-column{
+    width: 70% !important;
+}
+@media screen and (max-width:815px){
+    .globalSearchResult .coveo-results-column{
+    width: 100% !important;
+}
+}
+.CoveoSearchInterface .coveo-main-section{
+    max-width:1366px !important;
+    font-family: "HoneywellSans-Book", Arial, Serif;
+}
+.coveo-pager-list{
+    text-align: center;
+    .coveo-pager-next a,.coveo-pager-previous a{
+        padding: 1px 0 0 0 !important;
+        span{
+            margin-top: 3px !important;
+        }
+    }
+}
+.newsSearchResult{
+    /*margin-top: 30px !important;*/
+    font-family: "HoneywellSans-Book", Arial, Serif;
+    .coveo-results-column{
+        width: 100% !important;
+    }
+    
+    .CoveoSearchButton{
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        position: absolute !important;
+        top: 20px;
+        left: 380px;
+        background-color: white !important;
+        .coveo-icon {
+            background-position: -1619px 0px !important;
+        }
+    }
+    .coveo-result-cell.news-date{
+        text-align: left !important;
+        display:block !important;
+    }
+    .coveo-result-cell.news-date + .coveo-result-cell{
+        display: block !important;
+    }
+
+}
+.coveo-results-header{
+    margin-left: 15px;
+    >div{
+        text-align: left;
+    }
+    input.hasDatepicker{
+            width: 120px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-right: 3px;
+    }
+    img{
+        margin-right: 20px;
+    }
+}
+.CoveoPager {
+    margin-left: 15px !important;
+    ul {
+        text-align: left;
+        li.coveo-pager-anchor {
+            /*padding-top: 1px;*/
+            &:hover {
+                border: none;
+            }
+        }
+        li a{
+            font-size: 14px;
+        }
+    }
+}
+.CoveoPager ul li.coveo-active{
+    height: 38px;
+     > a{
+        font-size: 18px;
+     }
+}
+@media (min-width:970) and (max-width:1010px){
+    .newsSearchResult {
+        .CoveoSearchButton{
+            top: 20px;
+            left: 500px;
+        }
+    }
+}
+@media (min-width:580px) and (max-width:970px){
+    .newsSearchResult {
+        .CoveoSearchButton{
+            top: 20px;
+            left: 400px;
+        }
+    }
+}
+@media screen and (max-width:580px){
+    .newsSearchResult {
+        #DepartureDateFacet{
+            width: 250px;
+            text-align: left;
+        }
+        .CoveoSearchButton{
+            top: 45px;
+            left: 350px;
+        }
+    }
+    .coveo-results-header input.hasDatepicker{
+        width: 150px;
+    }
+}

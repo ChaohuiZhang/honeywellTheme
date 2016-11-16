@@ -1,0 +1,201 @@
+//rfwf-security.less
+.rfwf-security-show_None {
+    display: none !important;
+}
+
+.rfwf-securityform {
+    margin: 0 20px;
+
+    & .btn {
+        margin-left: 0;
+    }
+
+    .Captcha br {
+        display: none;
+    }
+
+    .control-label {
+        float: left;
+        margin-left: 20px;
+        width: 160px;
+    }
+
+    .input-sm, .form-group-sm .form-control {
+        border-radius: 3px;
+        font-size: 12px;
+        height: 30px;
+        line-height: 1.5;
+        max-width: 210px;
+        padding: 5px 10px;
+        float: left;
+        margin-left: 15px;
+    }
+
+    #CaptchaImage {
+        margin: 0 0 0 15px;
+        width: 210px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        float: left;
+    }
+
+    .CaptchaRefresh {
+        /*float: right;*/
+        margin: 0 0 0 5px;
+    }
+
+    .CaptchaInputLabel {
+        float: left;
+        margin-left: 20px;
+        width: 160px;
+        text-align: right;
+        font-weight: bold;
+    }
+
+    #CaptchaInputText {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 12px;
+        height: 30px;
+        line-height: 1.5;
+        width: 210px;
+        padding: 5px 10px;
+        float: left;
+        margin: 0 0 0 15PX;
+    }
+
+    .HelpLinkText_Div {
+        float: right !important;
+    }
+
+    .FormFieldCountryInfo{
+        font-size: 12px;
+        margin-bottom: 10px!important;
+        padding-right: 70px
+    }
+
+    .HelpLinkText_P {
+        text-align: right !important;
+        margin: 0 !important;
+    }
+
+    .FormFieldText_Div {
+        clear: both !important;
+        margin: 10px 0px 5px 0px !important;
+        text-align: center !important;
+    }
+
+    .Pointer_A {
+        cursor: pointer !important;
+    }
+}
+
+#TandCModal, #TandCModal_Help {
+    .modal-body {
+        overflow-y: scroll !important;
+        height: 300px !important;
+    }
+
+    .modal-footer {
+        background-color: #eaeaea !important;
+
+        .agreeText {
+            text-align: left !important;
+        }
+
+        .agreeButton {
+            float: right !important;
+        }
+    }
+
+	.rfwf-validation-modal-title {
+		border-bottom:1px solid #e5e5e5;
+	}
+
+	.rfwf-validation-modal-click{
+		position:relative;
+		top:-35px;
+	}
+}
+
+.rfwf-validation-fieldimg {
+    margin-left: 5PX;
+}
+
+.rfwf-validation-fieldmsg {
+    position: relative;
+    left: 195px;
+    margin-top: -10px;
+    margin-bottom: 3px;
+    font-size: 13px;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .rfwf-validation-modal-panel {
+        width: 80%;
+        margin-left: -40%;
+    }
+}
+
+@media (min-width: 601px) {
+    .rfwf-validation-modal-panel {
+        width: 40%;
+        margin-left: -15%;
+    }
+}
+
+.rfwf-validation-modal-panel {
+    display: none;
+    height: auto;
+    z-index: 10000;
+    position: fixed;
+    top: 20%;
+    left: 45%;
+    background-color: white;
+    /*box-shadow: 0 0 10px 5px grey;*/
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+
+    & a,
+    & a:hover {
+        margin-left: 99%;
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.rfwf-validation-modal-panel-body {
+    overflow-y: auto !important;
+    padding: 0 1% 1% 1%;
+}
+
+.field-validation-error {
+    color: red;
+    font-weight: bold;
+}
+
+.email-validation-error {
+    color: red;
+    margin-left: 195px;
+    margin-top: 10px;
+}
+
+
+::-ms-clear {
+    display: none;
+}
+
+::-ms-reveal {
+    display: none;
+}
+
+.rfwf-required_input {
+    color: red;
+    margin-left: 5px;
+}
+
+.rfwf-hide-element
+{
+display: none;
+}

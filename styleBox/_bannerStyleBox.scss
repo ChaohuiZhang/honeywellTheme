@@ -1,0 +1,98 @@
+// document-banner-stripe
+.document-banner-stripe {
+
+    min-height: 445px;
+    padding-top: 0;
+    h2 {
+        font-size: 16px;
+        min-width: 500px;
+        max-width: 600px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .text-center{
+        padding-top: 100px;
+    }
+
+    .full-width {
+        padding: 0 0 0 50px;
+    }
+
+    .page-header {
+        border-bottom: 0;
+    }
+
+    .score-center{
+        margin-top: 15px;
+        .score-hero {
+            text-align: center;
+            margin-top: 100px;
+            color: white;
+        }
+        .score-center-text {
+            text-align: center;
+            padding-top: 100px;
+            .score-content-spot {
+                h2 {
+                    font-size: 40px;
+                    font-weight: bold;
+                    min-width: 0;
+                    max-width: none;
+                }
+            }
+        }
+        
+    }
+
+    .score-well {
+        border: 0;
+
+        min-width: 300px;
+        min-height: 100px;
+    }
+
+    .btn-blue {
+        margin-bottom: 50px;
+    }
+
+    .btn-dark-grey {
+        height: 45px;
+        padding-top: 12px;
+    }
+
+    .btn-download {
+        margin-bottom: 20px;
+    }
+
+    .btn-white-link {
+        font-size: 20px;
+    }
+
+    .score-content-spot {
+        padding-left: 12px;
+    }
+
+    .score-section-header{
+        h2{
+            font-size: 40px;
+            font-weight: bold;
+            min-width: 0;
+            max-width: none;
+        }
+
+        h3{
+            font-size: 16px;
+            line-height: 20px;
+            min-width: 0;
+            max-width: none;
+        }
+    }
+}
+@media screen and (max-width: $extra-small-screen) {
+    .document-banner-stripe {
+        display: none;
+    }
+}

@@ -1,0 +1,43 @@
+.leadership-item {//.document-highlight
+
+    min-width: 200px;
+    border: none;
+    margin-top: 30px;
+    > img,
+    a > img {
+        @extend .img-responsive;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.score-center-text {
+    float:left;
+    margin: 10px 20px;
+}
+    .score-highlight {
+        max-height: 500px;
+        .score-highlight-body {
+            max-height: 160px;
+            overflow: hidden;
+            p {
+              overflow-wrap: break-word;
+            }
+        }
+    }
+
+    .score-call-to-action {
+        display: none;
+    }
+    .caption{
+        padding: 9px;
+    color: #333333;
+    h2{
+        text-align: center;
+        font-size: 16px;
+    }
+    .score-highlight-body{
+        text-align: center;
+        font-size: 14px;
+    }
+    }
+}

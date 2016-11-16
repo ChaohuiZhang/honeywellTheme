@@ -3,3 +3,137 @@
     max-width: 100%;
     height: auto !important; // Overrides inline styles from SC
 }
+
+.article-header {
+  margin-top: 0;
+  /*padding-top:40px;*/
+
+  h1 {
+    font-size: 28px;
+    margin-top: 0;
+    color: $article-title;
+    font-family: HoneywellSans-Bold, Arial, Serif;    
+  }
+}
+
+.article-header.page-header {
+  border-bottom: none;
+  margin-bottom: 10px;
+}
+
+.press-release-header {
+  margin-top: 50px;
+
+  h1 {
+    font-size: 25px;
+    margin-top: 0;
+    color: $article-title;
+  }
+}
+
+.press-release-header.page-header {
+  border-bottom: none;
+  margin-bottom: 10px;
+}
+
+.article-tags {
+  ul {
+    padding-left: 0;
+
+    li {
+      display: inline-block;
+      font-size: 14px;
+      font-family: HoneywellSans-Bold, Arial, Serif;
+
+      a::after {
+        @include link-pipe-separator();
+      }
+
+      &:last-child::after {
+        content: '';
+      }
+
+      &:last-child a::after {
+        content: '';
+      }
+
+      a:hover::after {
+        text-decoration: none;
+        display: inline-block;
+        color: black;
+      }
+    }
+  }
+
+  li.article-title, li.article-date {
+    &:after {
+      @include link-pipe-separator();
+    }
+  }
+
+  margin-bottom: 25px;
+}
+
+.article-media-contact, .article-featured-products {
+  @include sidebar-border-style();
+
+  h3 {
+    font-family: HoneywellSans-Bold, Arial, Serif;
+  }
+}
+
+.article-media-contact .score-inner .score-document-header h3 {
+  margin-top: 10px;
+}
+
+.pageWrapper {
+  .score-side {
+    .article-media-links {
+      .score-menu-list {
+        border-bottom: none;
+        margin-right: 0;
+
+        li {
+          padding: 0 0 20px 0;
+          margin-bottom: -1px;
+        }
+
+        a {
+          font-size: 18px;
+        }
+
+        a::before {
+          // @include generate-download-arrow();
+        }
+
+        a:after {
+          content: none;
+        }
+      }
+    }
+  }
+}
+
+/*padding-top: @top-gutter;
+  .sidebar-border-style();*/
+/*.score-menu-list {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      padding: 0 0 20px 0;
+      margin-bottom: -1px;
+    }
+  }
+
+  a {
+    font-size: 18px;
+    display: block;
+    font-family: HoneywellSans-Medium, Arial, Serif;
+    color: @links;
+  }*/
+@media screen and(max-width: $extra-small-screen) {
+  .article-lower-sidebar {
+    padding-top: 50px;
+  }
+}

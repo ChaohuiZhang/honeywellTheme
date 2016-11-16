@@ -1,8 +1,25 @@
 @import
 "bootstrap/bootstrap",
 
-// theme
 'mixin/variables',
 'mixin/mixin',
-'button/button'
+
+"rfwf/rfwf-socialwall",
+"rfwf/rfwf-eucookie",
+"rfwf/rfwf-security", 
+"rfwf/rfwf-variables",
+"score/score",
+"coveo/coveo",
+
+// theme
+
+'mixin/base',
+'layout/layout',
+'button/button',
+'header/header',
+'footer/footer',
+'form/form',
+'highlight/highlight',
+'list/list',
+'styleBox/styleBox'
 ;

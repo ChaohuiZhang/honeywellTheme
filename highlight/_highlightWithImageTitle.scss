@@ -1,0 +1,111 @@
+.home-highlight-style{
+    margin: 20px auto;
+    strong{
+        font-size: 16px;
+    }
+    div.score-highlight-header{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    div{
+        text-align: center;
+        margin-bottom: 10px;
+
+        .score-highlight{
+            h3{
+            color:#1792e5;
+            margin-bottom: 20px;
+        }
+        .score-highlight-body{
+            min-height: 60px;
+        }
+        
+        img{
+            margin-bottom: 20px;
+            width: 100%;
+            /*max-width: 268px;*/
+        }
+        .score-call-to-action{
+            width: 100%;
+        }
+        .score-call-to-action a{
+            background-color: #1792e5;
+            border-color: #1792e5;
+            border-radius: 0;
+            color: #ffffff;
+            font-family: HoneywellSans-Medium;
+            font-size: 16px;
+            text-transform: uppercase;
+            width: 100%;
+            max-width: 373px;
+            white-space: pre-wrap;
+            text-decoration: none;
+            display: inline-block;
+            line-height: 30px;
+        }
+        } 
+    }
+    h2{
+        font-size: 14px !important;
+    }
+}
+.score-column3.home-highlight-style,.score-column3.home-highlight-style_notext{
+        img{
+            max-width: 368px;
+        }
+}
+
+.home-highlight-style_notext{
+    margin: 20px auto;
+    strong{
+        font-size: 16px;
+    }
+    div.score-highlight-header{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    div{
+        text-align: center;
+        margin-bottom: 10px;
+
+        .score-highlight{
+            h3{
+            color:#1792e5;
+            margin-bottom: 20px;
+        }
+        
+        img{
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .score-call-to-action a{
+            background-color: #1792e5;
+            border-color: #1792e5;
+            border-radius: 0;
+            color: #ffffff;
+            font-family: HoneywellSans-Medium;
+            font-size: 16px;
+            text-transform: uppercase;
+            width: 100%;
+            max-width: 373px;
+            white-space: pre-wrap;
+            text-decoration: none;
+            display: inline-block;
+            line-height: 30px;
+        }
+        } 
+    }
+    h2,.score-highlight-body{
+            display: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+  
+    .home-highlight-style > div ,.home-highlight-style_notext > div{
+        width: 370px;
+        margin: 20px auto;
+    }
+}

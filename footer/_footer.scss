@@ -1,0 +1,222 @@
+.footer-stripe {
+  color: white;
+  //padding-left: 5px;    /////////////
+  margin-top: 40px;
+  padding-top: 10px;
+  font-size: 14px;
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  background-color: $nav-background-color;
+  .container:first-child {    
+    border-bottom: 1px solid $article-title;
+    padding-bottom:30px;    
+  }
+  .container:last-child {
+    padding-top: 15px;
+    .score-left-text a {
+      padding-top: 0;
+      padding-left: 10px;
+
+    }
+    .score-left-text a:after {
+      content: '|';
+      width: 5px;
+      height: 5px;
+      padding-left: 10px;
+    }
+    .score-left-text a:last-child:after {
+      content: '';
+    }
+    p {
+      font-size: 14px;
+      padding-right: 10px;
+      text-align: right;
+    }
+  }
+  a {
+    color: inherit;
+    padding-right: 0;
+    border: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 12px 0 0 0;
+  }
+
+  .score-menu-list {
+    font-weight: bold;
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      padding: 10px 0 10px 0;
+      margin-bottom: -1px;
+    }
+  }
+
+  .score-button-group {
+    a {
+      padding: 0 0 0 1px;
+      display: inline-block;
+    }
+
+    img {
+      padding: 0 10px 0 5px;
+    }
+  }
+
+  .container {
+    padding: 0 0 0 0px; //
+  }
+
+  .score-column2-largeleft .score-side {
+    padding-right: 0;
+    .text-right .score-content-spot{
+      margin-bottom: 0;
+    }
+  }
+
+  .score-column4-equal {
+    .score-menu-list {
+      font-weight: normal;
+    }
+  }
+  .col-lg-8 .score-content {
+    margin-bottom: 10px;
+  }
+
+  .col-lg-2:last-child .score-component .score-section-header {
+    margin-bottom: 20px;
+  }
+
+  .container .col-sm-6:last-child {
+    padding-right: 0;
+
+    .btn {
+      border: none;
+    }
+
+    .score-component a:first-child {
+      padding-left: 0;
+    }
+
+    .score-component a {
+      color: inherit;
+      padding-top: 0;
+
+      &:after {
+        @include link-pipe-separator();
+        color: white;
+      }
+    }
+
+    .score-component a:last-child {
+      padding-left: 0;
+      &:after {
+        content: none;
+      }
+    }
+  }
+  .row {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: $medium-screen) {
+  .footer-stripe {
+    .score-container:first-child .score-column2-largeleft {
+        margin-right: 0;
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 0px; //
+      .score-side {
+        padding-left: 0;
+        align-content: center;
+        flex: 1;
+      }
+      .score-main {
+        order: 2;
+        flex: 1 100%;
+        padding-right: 0px;  //
+      }
+
+      .score-left-text, .score-right-text {
+        text-align: center;
+      }
+      .score-left-text a {
+        padding-right: 10px;
+      }
+      .score-right-text {
+        padding: 20px 0;
+      }
+    }
+
+    .score-container:last-child .score-column2-largeleft {
+        width: 100%;  //
+      padding-top: 15px;
+      .score-main {
+        float: left;
+        width: 50%;
+      }
+      .score-side {
+        width: 50%;
+        float: right;
+        padding-right: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $extra-small-screen) {
+  .footer-stripe {
+    .score-container:first-child .score-column2-largeleft {
+
+      .score-side {
+        padding-left: 0;
+      }
+      .score-main {
+      }
+
+      .score-left-text, .score-right-text {
+        text-align: center;
+      }
+      .score-left-text a {
+        padding-right: 10px;
+      }
+      .score-right-text {
+        padding: 20px 0;
+      }
+    }
+
+    .score-container:last-child .score-column2-largeleft {
+      padding-top: 15px;
+      .score-main {
+        width: 100%;
+      }
+      .score-side {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+      }
+      .score-left-text, .score-right-text {
+        text-align: center;
+      }
+    }
+    .container:last-child p{
+      text-align: left;
+      padding-left: 10px;
+      &:first-child{
+        margin-top: 10px;
+      }
+    }
+  }
+
+}

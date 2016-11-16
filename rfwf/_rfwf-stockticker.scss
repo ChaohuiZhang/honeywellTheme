@@ -1,0 +1,79 @@
+.rfwf-stockticker {
+    padding: 5px;
+    border-style: solid;
+    width: 590px;
+    border-color: red;
+
+    .stockticker-inner-up {
+        padding: 5px;
+        font-size: 28px;
+
+        .stockticker-exchange {
+            float: left;
+        }
+
+        .stockticker-symbol {
+            float: left;
+            font-weight: bold;
+        }
+
+        .stockticker-price {
+            float: left;
+            font-weight: bold;
+            padding: 0px 0px 0px 8px;
+        }
+
+        .stockticker-change {
+            float: left;
+            font-size: 15px;
+            padding: 6px 5px 12px 25px;
+
+            .change-percent {
+                margin: 0px 0px 0px 3px;
+            }
+        }
+
+        .stockticker-volume {
+            float: left;
+            font-size: 15px;
+            padding: 6px 5px 12px 25px;
+
+            .volume-label {
+                font-weight: bold;
+            }
+
+            .volume-value {
+                margin: 0px 0px 0px 5px;
+            }
+        }
+    }
+
+    .stockticker-inner-down {
+        padding: 5px 0px 0px 0px;
+        font-size: 16px;
+        clear: both;
+
+        .stockticker-date {
+            float: left;
+            min-width: 260px;
+            text-align: center;
+        }
+
+        .stockticker-hint {
+            float: left;
+            color: grey;
+            font-style: italic;
+            padding: 0px 0px 0px 20px;
+        }
+
+        .stockticker-refresh {
+            background-image: url('/Areas/RFWFPresence/img/stockticker/refresh.png');
+            background-size: 30px 30px;
+            height: 30px;
+            width: 30px;
+            background-color: Transparent;
+            border-style: none;
+            margin: -5px 0px 0px 10px;
+        }
+    }
+}

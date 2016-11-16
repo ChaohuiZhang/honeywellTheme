@@ -1,0 +1,201 @@
+﻿/** Begin Page Filter **/
+
+/* Page Filter Trigger Button */
+.page-filter-trigger {
+    display: inline-block;
+    padding: 5px;
+    float: right;
+    position: relative;
+    -webkit-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+    border: 2px solid #1792e5;
+    background-color: #1792e5;
+    color: white;
+}
+
+.page-filter-trigger:disabled {
+    border: 2px solid #808080;
+    background-color: transparent;
+    color: #808080;
+}
+
+.page-filter-trigger:active,
+.page-filter-trigger:focus {
+    outline: 0;
+}
+
+.page-filter-trigger:hover {
+    color: #1c3f57;
+}
+
+.page-filter-trigger .glyphicon {
+    padding-left: 40px;
+    position: relative;
+    top: 3px;
+}
+
+.page-filter-trigger .page-filter-close {
+    display: none;
+}
+
+.page-filter-trigger.js-filter-active .page-filter-close {
+    display: inline-block;
+}
+
+.page-filter-trigger.js-filter-active .page-filter-open {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .page-filter-trigger {
+        display: block;
+        float: none;
+    }
+}
+
+/* Page Filter Container */
+.page-filter {
+    display: none;
+    padding: 1.5em 0;
+}
+
+.page-filter-container {
+    margin-bottom: -2.5em;
+}
+
+.page-filter-row {
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
+}
+
+.page-filter-col {
+    width: 19.25%;
+    float: left;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    margin-bottom: 2.5em;
+}
+
+.page-filter-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1em;
+    line-height: 1;
+    margin-bottom: 0;
+    color: #1792e5;
+    background-color: #d0d0d0;
+}
+
+.page-filter-list {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.page-filter-selectable {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0.5em 1em;
+    text-align: left;
+    border: 0;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    background-color: transparent;
+    border-top: 1px solid #ffffff;
+}
+
+.page-filter-selectable.js-filter-item-active {
+    background-color: #1792e5;
+    color: #ffffff;
+}
+
+.page-filter-selectable:focus,
+.page-filter-selectable:active {
+    outline: 0;
+}
+
+.page-filter-selectable:hover {
+    background-color: #1792e5;
+    color: #ffffff;
+}
+
+.page-filter-selectable .page-filter-item-close {
+    display: none;
+}
+
+.page-filter-selectable.js-filter-item-active .page-filter-item-close {
+    display: inline-block;
+}
+
+.page-filter-item-close {
+    float: right;
+    position: relative;
+    top: 5px;
+}
+
+@media (max-width: 768px) {
+    .page-filter-col {
+        width: 50%;
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    .page-filter-selectable:hover {
+        background-color: inherit;
+        color: inherit;
+    }
+
+    .page-filter-selectable.js-filter-item-active {
+        background-color: #1792e5;
+        color: #ffffff;
+    }
+}
+
+/** End Page Filter **/
+
+/* Coveo Search Results */
+
+.coveo-title.CoveoResult td {
+    vertical-align: top;
+}
+
+a.coveoLink {
+    color: #1792e5;
+    margin-right: 15px;
+}
+
+/*HONCO-1321 - Coveo a tage needs to be in CoveoResultLink Class*/
+
+a.coveoButton.CoveoResultLink {
+    color: #1792e5;
+    margin: 0 5px 10px 0;
+    padding: 0 7px 2px 7px;
+}
+
+.coveoButton.CoveoResultLink {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.coveoButton.CoveoResultLink:hover {
+    cursor: pointer;
+    color: #2c5985;
+    text-decoration: none;
+}
+
+.coveoButton.CoveoResultLink:hover:hover {
+    color: #F47F24;
+}
+
+.coveoButton.CoveoResultLink:hover:link {
+    color: #F47F24;
+}
+
+@media (max-width: $screen-sm-max) {
+    .searchbox-visible {
+        margin-top: 75px;
+    }
+}
+

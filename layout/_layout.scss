@@ -1,0 +1,55 @@
+/* Fixes an issue where a page layout inside a full width layout goes too wide on mobile. */
+.score-container.full-width .score-page {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+header.score-header + .page-wrapper .score-stripe{
+    padding-top: 0;
+}
+
+.score-stripe, .score-style-box, .score-carousel-pane, .score-full-width-hero, .score-hero, .score-section-header {
+  &.cover {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &.contain {
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &.repeat {
+    background-repeat: repeat;
+  }
+  &.repeat-x {
+    background-repeat: repeat-x;
+  }
+  &.repeat-y {
+    background-repeat: repeat-y;
+  }
+}
+
+.score-stripe.cover {
+  min-height: 450px;
+  .text-right {
+    float: right;
+    width: 500px;
+
+    .score-content-spot{
+        text-align:left;
+    }
+  }
+}
+
+@media screen and  (max-width: $small-screen) {
+  background-size: auto;
+
+  .score-stripe.cover {
+  min-height: 450px;
+  .text-right {
+    float: right;
+    width: 280px;
+  }
+}
+
+}

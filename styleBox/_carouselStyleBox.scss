@@ -1,0 +1,102 @@
+.carousel-inner {
+    //fix for Flashing in Safari
+    -webkit-transform-style: preserve-3d;
+    & > .item {
+        // min-height: 370px;
+    }
+}
+
+//fix for carousel slide effect in Safari
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-inner > .item {
+        -webkit-transition: -webkit-transform .6s ease-in-out;
+        -o-transition:      -o-transform .6s ease-in-out;
+        transition:         transform .6s ease-in-out;
+
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-perspective: 1000;
+        perspective: 1000;
+    }
+    .carousel-inner > .item.next,
+    .carousel-inner > .item.active.right {
+        left: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    .carousel-inner > .item.prev,
+    .carousel-inner > .item.active.left {
+        left: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    .carousel-inner > .item.next.left,
+    .carousel-inner > .item.prev.right,
+    .carousel-inner > .item.active {
+        left: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+.score-carousel {
+    .carousel-indicators {
+
+    }
+    .carousel-inner {
+
+    }
+}
+.score-carousel-pane {
+    .score-carousel-pane-body {
+        //turn into bootstrap container
+        @extend .container;
+    }
+}
+
+
+.home-carousel-style.score-stripe{
+    padding-top: 0px;
+}
+.home-carousel-style .carousel-inner .item{
+    background-size: 100% 598px;
+    background-repeat: no-repeat;
+    height: 598px;
+    .score-column1{
+        position: absolute;
+        right: 200px;
+        bottom: 100px;
+        .score-button{
+            width: 150px;
+            height: 50px;
+            line-height: 40px;
+        }
+    }
+    .score-carousel-pane-body{
+        position: absolute;
+        right: 200px;
+        bottom: 100px;
+        text-align: right;
+        .score-content-spot{
+            font-weight: bold;
+            margin-bottom: 200px;
+            text-align: right;
+            p{
+                font-size: 30px !important;
+                color: #333;
+            }
+        }
+        .score-button{
+            width: 150px;
+            height: 50px;
+            line-height: 40px;
+        }
+    }
+}
+.home-carousel-style .score-column2.wide-left{
+    height:500px;
+}
+@media (max-width: 1366px){
+.home-carousel-style .carousel-inner .item{
+    background-size: 1366px 598px;
+}
+}

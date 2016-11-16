@@ -1,0 +1,28 @@
+.corporate-citizenship-highlight{
+    > div {
+        > a{
+            display: block;
+            text-align: center;
+            margin:5px;
+        }
+        > a:last-child{
+            font-weight: bold;
+            color: rgb(114, 114, 114);
+        }
+        >img {
+            margin: 10px auto;
+        }
+        > div{
+            padding:20px;
+        }
+    }
+    .font_orange{
+        color:rgb(208, 125, 17);
+    }
+    .font_red{
+        color:rgb(222, 0, 49);
+    }
+    .font_green{
+        color: rgb(9, 149, 19);
+    }
+}

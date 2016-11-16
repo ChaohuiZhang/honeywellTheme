@@ -1,0 +1,78 @@
+﻿.no-image-highlight {
+
+    padding: 0px;
+    border: none;
+    margin-bottom: 0px;
+
+    .img {
+        display: none;
+    }
+    .caption {
+        padding-top: 0px;
+
+        h2{
+            display: none;
+        }
+    }
+
+    .score-highlight-body {
+        margin-bottom: 30px;
+    }
+
+    .score-call-to-action{
+        display: table-caption;
+
+        .btn-default {
+            $blue: rgba(23,146,229,1);
+            $grey: #808080;
+
+            color: $blue;
+            font-size: 16px;
+            font-weight: normal;
+            border-radius: 0;
+            width: 260px;
+            word-wrap: break-word;
+            padding-left: 0;
+            white-space: normal;
+            text-align: left;
+            &:before {
+                // @include generate-download-arrow();
+            }
+
+            &,
+            &:active,
+            &.active,
+            &[disabled],
+            fieldset[disabled] & {
+                color: $blue;
+                background-color: transparent;
+                box-shadow: none;
+            }
+
+                &,
+                &:hover,
+                &:focus,
+                &:active {
+                    border-color: transparent;
+                }
+
+                    &:hover,
+                    &:focus {
+                        text-decoration: underline;
+                        background-color: transparent;
+                    }
+
+                    &[disabled],
+                    fieldset[disabled] & {
+                        &:hover,
+                        &:focus {
+                            color: $grey;
+                            text-decoration: none;
+                        }
+                    }
+        }    
+    }
+
+
+
+}

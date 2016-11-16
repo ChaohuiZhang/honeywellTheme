@@ -1,0 +1,70 @@
+//SCORE page container styles
+
+.score-page {
+	@include make-row();
+	&.score-column1 {
+		& > .score-main {
+			@include make-md-column(12);
+		}	
+	}
+	&.score-column2-equal {
+		& > .score-side {
+			@include make-md-column(6);
+		}
+		& > .score-side2 {
+			@include make-md-column(6);
+		}
+	}
+	&.score-column2-largeleft {
+		& > .score-main {
+			@include make-md-column(8);
+		}
+		& > .score-side {
+			@include make-md-column(4);
+		}
+	}
+	&.score-column2-largeright {
+		& > .score-side {
+			@include make-md-column(4);
+		}
+		& > .score-main {
+			@include make-md-column(8);
+		}
+	}
+	&.score-column3-equal {
+		& > .score-side {
+			@include make-md-column(4);
+		}
+		& > .score-main {
+			@include make-md-column(4);
+		}
+		& > .score-side2 {
+			@include make-md-column(4);
+		}
+	}
+	&.score-column3-largemiddle {
+		& > .score-side {
+			@include make-md-column(3);
+		}
+		& > .score-main {
+			@include make-md-column(6);
+		}
+		& > .score-side2 {
+			@include make-md-column(3);
+		}
+	}
+	&.score-column4-equal {
+		& > .score-side {
+			@include make-md-column(3);
+		}
+		& > .score-main {
+			@include make-md-column(3);
+		}
+		& > .score-main2 {
+			@include make-md-column(3);
+		}
+		& > .score-side2 {
+			@include make-md-column(3);
+		}
+	}
+}

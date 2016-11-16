@@ -1,0 +1,34 @@
+//define flyout menu alternative location
+$flyout-left : -108%;
+$flyout-right : 100%;
+
+//normal location
+//$flyout-left : 95%;
+//$flyout-right : default;
+
+//rfwf-security.less
+.rfwf-securityform {
+    margin: 0 20px;
+
+    & .btn {
+        margin-left:0;
+    }
+    .control-label {
+        float:left;
+        margin-left:20px;
+        width:160px;
+    }
+    .input-sm, .form-group-sm .form-control {
+        border-radius: 3px;
+        font-size: 12px;
+        height: 30px;
+        line-height: 1.5;
+        max-width: 210px;
+        padding: 5px 10px;
+        float:left;
+        margin-left:15px;
+    }
+    .btn{
+        margin-left:195px !important;
+    }
+}
