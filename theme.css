@@ -16498,15 +16498,18 @@ content: " \003e";
   margin-left: 15px !important; }
   .CoveoPager ul {
     text-align: left; }
+    .CoveoPager ul .coveo-pager-anchor {
+      height: 29px; }
     .CoveoPager ul li.coveo-pager-anchor {
       /*padding-top: 1px;*/ }
       .CoveoPager ul li.coveo-pager-anchor:hover {
         border: none; }
     .CoveoPager ul li a {
-      font-size: 14px; }
+      font-size: 14px;
+      display: block !important; }
 
 .CoveoPager ul li.coveo-active {
-  height: 38px; }
+  height: 29px; }
   .CoveoPager ul li.coveo-active > a {
     font-size: 18px; }
 

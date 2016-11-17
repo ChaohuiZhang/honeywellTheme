@@ -233,7 +233,7 @@ header .score-right-text {
 
     .score-button-toolbar {
         a {
-            margin: 0 20px;
+            margin: 0 10px;
         }
     }
 }
@@ -493,11 +493,11 @@ header {
                         width: 100%;
 
                         .score-button-toolbar {
-                            margin-top: -5px;
+                            // margin-top: -5px;
                             margin-right: 0;
 
                             a:first-child {
-                                margin-right: 10px;
+                                margin-right: 0px;
                             }
                         }
                     }
@@ -528,6 +528,9 @@ header {
                     padding-right: 0;
                     > ul.level-2{
                         width: 30%;
+                        li{
+                            width: 100%;
+                        }
                     }
                 }
                 li.score-megamenu-dropdown:first-child {
@@ -578,7 +581,7 @@ header {
                                 justify-content: flex-end;
 
                                 ul.dropdown-menu.level-2 li {
-                                    width: 28%;
+                                    width: 30%;
                                     padding-top: 5px;
 
                                     a:after {
@@ -614,8 +617,8 @@ header {
                                 // }
 
                                 li ul.dropdown-menu.level-2 > li {
-                                    width: auto;
-                                    float: left;
+                                    // width: auto;
+                                    // float: left;
                                     left: 0;
                                     padding: 3px 10px;
                                 }
@@ -752,9 +755,11 @@ header {
 
 header .score-center .wide-right > .score-right .score-right-text .score-button-toolbar {
     margin-right: 0;
+    padding-top:1px;
 
     a:last-child {
         margin-right: 0;
+        margin-top: -5px;
     }
 }
 
