@@ -6,7 +6,7 @@ $tabsRegion: "header .score-header > .score-tab";
 @mixin generate-arrow($color, $content: '\203A') {
     content: $content;
     color: $color;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 .touch .webkit-tap-highlight-color {
@@ -535,7 +535,7 @@ header {
                 }
                 li.score-megamenu-dropdown:first-child {
                     > ul.level-2{
-                        width: 90%;
+                        width: 100%;
                     }
                 }
 
@@ -581,7 +581,7 @@ header {
                                 justify-content: flex-end;
 
                                 ul.dropdown-menu.level-2 li {
-                                    width: 30%;
+                                    width: 33%;
                                     padding-top: 5px;
 
                                     a:after {
@@ -634,8 +634,8 @@ header {
                     font-weight: bold;
                     line-height: 1.42857143;
                     color: white;
-                    font-size: 16px;
-                    white-space: normal;
+                    font-size: 14px;
+                    white-space: nowrap;
                     margin-bottom: 0px;
                 }
                 .level-3 > li > a {
