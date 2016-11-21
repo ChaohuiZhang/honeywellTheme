@@ -48,6 +48,7 @@ h1, .h1, h2, .h2, h3, .h3 {
 
 a {
     color: $links;
+    word-wrap: break-word;
 }
 /* WebKit browsers */
 input:focus::-webkit-input-placeholder {
