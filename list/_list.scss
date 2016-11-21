@@ -40,6 +40,10 @@
         content: " \003e";
             */
             }
+            > ul > li > a {
+                    padding-bottom: 5px;
+                    padding-top: 5px;
+            }
             > ul > li.active >a {
                 background-color: #eee;
             }
