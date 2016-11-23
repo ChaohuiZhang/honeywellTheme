@@ -40,6 +40,9 @@ header.score-header + .page-wrapper .score-stripe{
     }
   }
 }
+.page-wrapper {
+    position: relative;
+}
 
 @media screen and  (max-width: $small-screen) {
   background-size: auto;
