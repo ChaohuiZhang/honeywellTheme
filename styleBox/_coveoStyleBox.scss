@@ -132,3 +132,7 @@
         width: 150px;
     }
 }
+
+.CoveoResultLink:hover, .CoveoResultLink:visited, a.CoveoResultLink:hover, a.CoveoResultLink:visited, .CoveoResult a.CoveoResultLink:hover, .CoveoResult a.CoveoResultLink:visited{
+    color: #1c69b3 !important;
+}
