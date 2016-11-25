@@ -1228,6 +1228,15 @@ header .score-component.score-container.full-width{
         margin: 0 5px;
     }
 }
+@media screen and (min-width:481px) and (max-width:970px) {
+    header .score-center nav .score-nav-wrapper .score-nav .navbar-collapse ul.navbar-nav {
+        width: 380px;
+        left: -210px;
+        .dropdown-menu.level-2 {
+            top: -30px;
+        }
+    }
+}
 @media screen and (max-width:770px) {
     .header_container_layout{
         > .score-left{
@@ -1260,6 +1269,13 @@ header .score-component.score-container.full-width{
             .score-button-toolbar {
                 width: 110px !important;
             } 
+        }
+    }
+    header .score-center nav .score-nav-wrapper .score-nav .navbar-collapse ul.navbar-nav {
+            width: 339px;
+            left: -230px;
+        .dropdown-menu.level-2 {
+            top: -30px;
         }
     }
 }
