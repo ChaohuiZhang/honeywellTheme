@@ -759,7 +759,10 @@ header .score-center .wide-right > .score-right .score-right-text .score-button-
 
     a:last-child {
         margin-right: 0;
-        margin-top: -5px;
+        margin-top: 0px;
+        img{
+            width: 20px;
+        }
     }
 }
 
@@ -1264,7 +1267,7 @@ header .score-component.score-container.full-width{
             .score-button-toolbar,
             .score-button-toolbar a {
                 margin-right: 0px !important;
-                margin-left: 0px !important;
+                margin-left: 10px !important;
             }
             .score-button-toolbar {
                 width: 110px !important;
