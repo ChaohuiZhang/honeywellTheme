@@ -101,36 +101,17 @@
         font-size: 13px;
      }
 }
-@media (min-width:970) and (max-width:1010px){
-    .newsSearchResult {
-        .CoveoSearchButton{
-            top: 20px;
-            left: 500px;
-        }
-    }
-}
-@media (min-width:580px) and (max-width:970px){
-    .newsSearchResult {
-        .CoveoSearchButton{
-            top: 20px;
-            left: 400px;
-        }
-    }
-}
-@media screen and (max-width:580px){
-    .newsSearchResult {
-        #DepartureDateFacet{
-            width: 250px;
-            text-align: left;
-        }
-        .CoveoSearchButton{
-            top: 45px;
-            left: 350px;
-        }
-    }
-    .coveo-results-header input.hasDatepicker{
-        width: 150px;
-    }
+
+@media screen and (max-width: 670px) {
+  .newsSearchResult #DepartureDateFacet {
+    width: 250px;
+    text-align: left; }
+  .newsSearchResult .CoveoSearchButton {
+    top: 54px;
+    left: 220px; }
+
+  .coveo-results-header input.hasDatepicker {
+    width: 150px; } 
 }
 
 .CoveoResultLink:hover, .CoveoResultLink:visited, a.CoveoResultLink:hover, a.CoveoResultLink:visited, .CoveoResult a.CoveoResultLink:hover, .CoveoResult a.CoveoResultLink:visited{
