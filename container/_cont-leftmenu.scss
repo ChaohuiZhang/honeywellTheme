@@ -1,0 +1,26 @@
+.score-column2.detail_info_page{
+    padding-top: 40px;
+}
+@media only screen and (max-width: 480px){
+    .page-wrapper {
+    .score-left {
+        .score-section-menu {
+            text-align: center;
+        }}}
+}
+@media only screen and (min-width: 480px){
+    .score-column2.detail_info_page > .score-left{
+        float: left;
+        width: 33.33333%;
+    }
+    .score-column2.detail_info_page > .score-right{
+        float: left;
+        width: 66.66667%;
+    }
+    .score-column2.gap_in_pic_text > .score-left{
+        width: 22%;
+    }
+    .score-column2.gap_in_pic_text > .score-left{
+        width: 78%;
+    }
+}

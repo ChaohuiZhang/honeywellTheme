@@ -1,0 +1,46 @@
+
+h1 {
+    font-size: 35px;
+}
+ul{
+    list-style: none;
+}
+h2 {
+    font-size: 20px;
+}
+h2{
+    strong{
+        font-size: 16px;
+    }
+}
+h3 {
+    font-size: 18px;
+    font-family: HoneywellSans-Medium, Arial, Serif;
+}
+
+h4 {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+h1 br{
+    display: none;
+}
+
+p {
+    font-size: 14px;
+    font-family: HoneywellSans-Medium, Arial, Serif;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+a {
+    color: $links;
+    word-wrap: break-word;
+}
+.BoldFont{
+        font-weight: bold;
+}

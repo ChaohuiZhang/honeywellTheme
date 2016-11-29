@@ -152,3 +152,12 @@ header.score-header + .page-wrapper .score-stripe{
 }
 
 }
+
+@media screen and (max-width: $extra-small-screen) {
+    .document-banner-stripe {
+        display: none;
+    }
+    header + div .score-stripe.cover{
+        display: none;
+    }
+}

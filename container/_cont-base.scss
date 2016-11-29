@@ -4,3 +4,41 @@
 img.scEmptyImage{
         width: auto !important;
 }
+// video
+.play-video-icon {
+  background-image: url("/Areas/Honeywell_com/img/play_icon80x80.png");
+  margin: auto;
+  opacity: 0.6;
+  z-index: 2;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+//jiathis
+.jiathis_style_32x32  .jtico{
+    width: 32px;
+    margin-right: 4px;
+    border-radius: 7px;
+    padding-left: 0 !important;
+}
+// general
+.contianer_min_height{
+    min-height:600px;
+}
+.padding-top40{
+    padding-top: 40px;
+}
+.margin-left30{
+    margin-left:30px;
+}
+.height300 {
+    height: 300px !important;
+    min-height: 300px !important;
+    position: relative;
+}
+.text_right{
+        text-align: right;
+}
