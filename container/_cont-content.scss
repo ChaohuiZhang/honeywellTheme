@@ -52,32 +52,6 @@
 }
 }
 
-.score-site-map{
-        font-size: 14px;
-        margin-top: 20px;
-        list-style: none;
-        padding-left: 16px;
-        > li:first-child > a{
-                font-size: 16px;
-                color: #333;
-                text-decoration: none;
-                font-weight: bold;
-        }
-         .level-4,.level-5{
-                 display: none;
-         }
-         .level-2{
-                 font-weight: bold;
-                 > li a:hover{
-                         background-color: #fff;
-                 }
-         }
-         .level-3 li{
-                 float: left;
-                 font-weight: normal;
-         }
-}
-
 //news center
 .news_center_right_container{
         .score-right{
@@ -178,9 +152,7 @@
                 }
         }
 }
-.BoldFont{
-        font-weight: bold;
-}
+
 // company history
 div.company_history .score-column2 {
         .score-left {
@@ -227,9 +199,7 @@ div.company_history .score-column2 {
                 }
         }
 }
-.text_right{
-        text-align: right;
-}
+
 @media (min-width:992px) and (max-width:1396px){
         .corporate_citizenship_fore_box{
                 >div{
@@ -584,9 +554,6 @@ div.score-column2.wide-right.news_container {
 //automobiletransportation
 .score-column3.equal.corporate_citizenship_fore_box {
         padding-top: 40px;
-}
-.score-header-image img {
-      width: 100%;
 }
 
 // s-series news style

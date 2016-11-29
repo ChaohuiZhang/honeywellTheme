@@ -50,6 +50,9 @@ a {
     color: $links;
     word-wrap: break-word;
 }
+.BoldFont{
+        font-weight: bold;
+}
 /* WebKit browsers */
 input:focus::-webkit-input-placeholder {
     opacity: 0;
@@ -95,6 +98,9 @@ input:focus:-ms-input-placeholder {
     min-height: 300px !important;
     position: relative;
 }
+.text_right{
+        text-align: right;
+}
 
 @font-face {
     font-family: 'HoneywellCond';
@@ -136,14 +142,6 @@ input:focus:-ms-input-placeholder {
     src: url("../fonts/HoneywellSans-Medium.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
-}
-
-
-// special pages
-
-//site map
-.score-site-map{
-            display:none;
 }
 
 // video
