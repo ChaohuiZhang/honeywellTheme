@@ -63,6 +63,11 @@
 }
 
 
+@mixin sidebar-border-style() {
+  padding-bottom: 20px;
+  //border-bottom: 1px solid black;
+}
+
 .score-page {
 
 &.score-column4-equal {
