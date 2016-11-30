@@ -631,6 +631,9 @@ header {
                     font-size: 13px;
                     white-space: nowrap;
                     margin-bottom: 0px;
+                    max-width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
                 .level-3 > li > a {
                     padding: 3px 10px 0 0;
@@ -1253,7 +1256,7 @@ header .score-component.score-container.full-width{
             width: 33.33% !important;
         }
         > .score-right{
-            width: 50% !important;
+            width: 60% !important;
             float: right;
             padding-left: 0px;
             padding-right: 0px;
