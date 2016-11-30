@@ -62,3 +62,35 @@ body {
     font-style: normal;
 }
 
+.score-page {
+
+&.score-column4-equal {
+    & > .score-side {
+      @include make-sm-column(6);
+    }
+    & > .score-main {
+      @include make-sm-column(6);
+    }
+    & > .score-main2 {
+      @include make-sm-column-with-clear(6);
+    }
+    & > .score-side2 {
+      @include make-sm-column(6);
+    }
+  }
+
+&.score-column3-equal {
+    & > .score-side {
+      @include make-sm-column(6);
+    }
+    & > .score-main {
+      @include make-sm-column(6);
+    }
+    & > .score-side2 {
+      @include make-sm-column-with-clear(6);
+    }
+  }
+  
+
+
+}
