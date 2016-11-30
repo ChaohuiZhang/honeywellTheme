@@ -230,6 +230,8 @@ div.productSearchResult {
         div:nth-child(2) {
             font-size: 14px;
             line-height: 20px;
+            max-height: 200px;
+            overflow: hidden;
         }
     }
 }
@@ -266,6 +268,10 @@ div.page-wrapper .score-column1.product_categories {
                 .subcategory_image {
                     h4, p, a {
                         margin: 10px;
+                    }
+                    p {
+                        height: 5.5em;
+                        overflow: hidden;
                     }
                 }
             }
@@ -708,6 +714,15 @@ div.page-wrapper .score-column1.product_categories {
             color: white;
             padding: 0px;
             margin: 10px auto;
+            .score-center {
+                div:first-child {
+                    font-size: 24px;
+                }
+                div:nth-child(2) {
+                    max-height: initial;
+                    overflow: initial;
+                }
+            }
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1396px){
