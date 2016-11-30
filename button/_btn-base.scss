@@ -1,3 +1,56 @@
+// button style format
+.btn-base {
+    // display: inline-block;
+    // color: $white;
+    // margin-bottom: 0; // For input.btn
+    // font-weight: $btn-font-weight;
+    // text-align: center;
+    // vertical-align: middle;
+    // touch-action: manipulation;
+    // cursor: pointer;
+    // background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    // background: $blue;
+    // border: 1px solid transparent;
+    // white-space: nowrap;
+
+    &,
+    &:active,
+    &.active,
+    &[disabled],
+    fieldset[disabled] & {
+        // color: $blue;
+        // background-color: transparent;
+        // box-shadow: none;
+    }
+
+        &,
+        &:hover,
+        &:focus,
+        &:active {
+            // border-color: transparent;
+        }
+
+            &:hover,
+            &:focus {
+                // color: $white;
+                // text-decoration: underline;
+                // background-color: transparent;
+            }
+
+            &[disabled],
+            fieldset[disabled] & {
+                &:hover,
+                &:focus {
+                    // color: $grey;
+                    // text-decoration: none;
+                }
+            }
+            &:after {
+           // content: "\00a0\203A";
+    }
+}
+
+// other useful style
 .score-image-button{
 	display:block;
 }

@@ -63,38 +63,19 @@
 }
 
 
-.score-page {
-
-&.score-column4-equal {
-    & > .score-side {
-      @include make-sm-column(6);
-    }
-    & > .score-main {
-      @include make-sm-column(6);
-    }
-    & > .score-main2 {
-      @include make-sm-column-with-clear(6);
-    }
-    & > .score-side2 {
-      @include make-sm-column(6);
-    }
-  }
-
-&.score-column3-equal {
-    & > .score-side {
-      @include make-sm-column(6);
-    }
-    & > .score-main {
-      @include make-sm-column(6);
-    }
-    & > .score-side2 {
-      @include make-sm-column-with-clear(6);
-    }
-  }
-  
-
-
+@mixin sidebar-border-style() {
+  padding-bottom: 20px;
+  //border-bottom: 1px solid black;
 }
+
+// header section
+@mixin generate-arrow($color, $content: '\203A') {
+    content: $content;
+    color: $color;
+    padding-left: 5px;
+}
+
+
 
 // link
 @mixin link-pipe-separator() {
