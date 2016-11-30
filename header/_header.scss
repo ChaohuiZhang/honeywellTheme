@@ -1367,3 +1367,23 @@ header .score-component.score-container.full-width{
         display: none;
     }
 }
+.s-series-header{
+    @extend .header_container_layout;
+}
+@media screen and (min-width: 971px) and (max-width: 1396px) {
+  .s-series-header > .score-right {
+    width: 75% !important;
+    }
+  .s-series-header .score-left {
+    width: 25% !important;
+    float: left;
+    }
+}
+@media screen and (max-width:970px){
+     .s-series-header > .score-left {
+        width: 238px !important;
+        }
+    .s-series-header > .score-right{
+        width: calc(100% - 238px) !important;
+    }
+}
