@@ -92,12 +92,21 @@ header {
             width: 85%;
             padding: 75px 15px;
         }
+        .tab-content {
+            min-height: 100px;
+        }
 
         .score-tab-panel {
+            // @media only screen and (max-width: $screen-sm-max) {
+            //     position: relative;
+            //     left: 100%;
+            //     height: 0;
+            //     margin: 0;
+            // }
             @media only screen and (max-width: $screen-sm-max) {
-                position: relative;
-                left: 100%;
-                height: 0;
+                position: initial;
+                left: initial;
+                height: auto;
                 margin: 0;
             }
         }
