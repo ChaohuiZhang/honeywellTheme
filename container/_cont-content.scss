@@ -584,6 +584,45 @@ div.score-column2.wide-right.news_container {
         }
     }
 }
+.sseries-product-title{
+        font-size: 12px;
+    font-weight: bold;
+    background-color: #eee;
+    padding: 10px;
+    color: #666666;
+}
+.sseries-product-list-title{
+    height:37px;
+}
+.sseries-product-list-title div{
+    font-size:12px;
+  font-weight:bold;
+  float:left;
+  width:25%;
+  padding:10px;
+}
+.sseries-product-item{
+    margin: 0 !important;
+    border: none !important;
+}
+.sseries-product-item:nth-child(2n+1){
+    background-color:#eee;
+}
+.sseries-product-item .sseries-product-list-sseries-cell{
+font-size:12px;
+  float:left;
+  width:25%;
+  padding:10px;
+}
+.sseries-product-list-title + #MainPanel .coveo-results-column{
+    padding:0 !important;
+}
+.sseries-product-list-title + #MainPanel .CoveoPager{
+    display:none;
+}
+.sseries-product-list-title + #MainPanel .sseries-product-list{
+        margin-top:0;
+}
 
 // promo container
 .promo-container {
