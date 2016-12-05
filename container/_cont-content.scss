@@ -233,7 +233,8 @@ div.company_history .score-column2 {
         .score-column4.equal.whoweare-our-initiatives{
                 width: 100%;
                 >div{
-                        width: 370px;
+                        width: 100%;
+                        max-width: 370px;
                         margin: 20px auto;
                         a{
                                 text-align: center;

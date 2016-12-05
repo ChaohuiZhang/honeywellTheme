@@ -22,7 +22,7 @@
 
 
 // other useful style
-.score-header-image img {
+.score-right .score-header-image img {
       width: 100%;
 }
 img.scEmptyImage{
@@ -47,6 +47,23 @@ img.scEmptyImage{
     margin-right: 4px;
     border-radius: 7px;
     padding-left: 0 !important;
+}
+// error page
+.error-page-1-column-layout{
+        h1{
+                font-size: 35px !important;
+                font-weight: 500;
+                margin:40px auto;
+                padding-bottom:20px;
+                border-bottom:1px solid #eeeeee;
+        }
+    
+    .score-content-spot p{
+            font-size: 18px !important;
+             &:first-child{
+                     font-weight: 500;
+             }
+    }
 }
 // general
 .contianer_min_height{
