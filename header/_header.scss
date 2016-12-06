@@ -1379,11 +1379,20 @@ header .score-component.score-container.full-width{
     float: left;
     }
 }
-@media screen and (max-width:970px){
+@media (min-width:465px) and (max-width:970px){
      .s-series-header > .score-left {
         width: 238px !important;
         }
     .s-series-header > .score-right{
         width: calc(100% - 238px) !important;
+    }
+}
+@media screen and (max-width:465px){
+     .s-series-header > .score-left {
+        width: 100% !important;
+        }
+    .s-series-header > .score-right{
+        margin-top: 20px !important;
+        width: 100% !important;
     }
 }
