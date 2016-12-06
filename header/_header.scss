@@ -390,12 +390,12 @@ header {
 
 h1.page-title {
     margin-top: 0;
-    color: $page-title;
+    color: #555555;
 }
 
 h3.page-subtitle {
     margin-top: 0;
-    color: $page-subtitle;
+    color: #606060;
 }
 
 //site nav
@@ -1194,7 +1194,7 @@ header .score-center nav ul.level-2 >li{
         margin-bottom: 0;
 }
 header .score-component.score-container.full-width{
-    border-top:2px solid $stock-ticker-border;
+    border-top:2px solid #CFCFCF;
 }
 // cookie banner
 #HoneywellEUCookie-Banner{
