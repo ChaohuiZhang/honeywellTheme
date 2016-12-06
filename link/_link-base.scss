@@ -1,4 +1,19 @@
 a {
     color: $links;
     word-wrap: break-word;
+    // font-size: 14px;
+    // display: inline-block;
+    // text-decoration: :none;
+    // padding:0;
+    // margin: 0;
+    // position:relative;
+    // background: :transparent;
+
+    &:after{
+    	// content:" ";
+    	// position:absolute;
+    	// left:0;
+    	// top:0;
+    	// display: block;
+    }
 }
