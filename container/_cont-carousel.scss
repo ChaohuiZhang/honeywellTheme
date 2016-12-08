@@ -58,20 +58,20 @@
     padding-top: 0px;
 }
 .home-carousel-style .carousel-inner .item{
-    background-size: 100% 598px;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     height: 598px;
     .score-column1{
         position: absolute;
-        right: 200px;
-        bottom: 0px;
+        right: 0;
+        bottom: -50px;
         @media only screen and (max-width: 480px) {
             right: -160px;
         }
         .score-button{
-            width: 150px;
-            height: 50px;
-            line-height: 40px;
+            width: 100px;
+            height: 40px;
+            line-height: 30px;
         }
     }
     .score-carousel-pane-body{
@@ -88,21 +88,13 @@
                 color: #333;
             }
         }
-        .score-button{
-            width: 150px;
-            height: 50px;
-            line-height: 40px;
-        }
+        
     }
 }
 .home-carousel-style .score-column2.wide-left{
     height:500px;
 }
-@media (max-width: 1366px){
-.home-carousel-style .carousel-inner .item{
-    background-size: 1366px 598px;
-}
-}
+
 
 /* Fixes an issue where a page layout inside a full width layout goes too wide on mobile. */
 .score-container.full-width .score-page {
