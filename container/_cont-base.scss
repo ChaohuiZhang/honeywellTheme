@@ -83,3 +83,8 @@ img.scEmptyImage{
 .text_right{
         text-align: right;
 }
+@media screen and (max-width:770px){
+.score-header-image img {
+      width: 100%;
+    }
+  }

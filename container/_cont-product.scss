@@ -728,12 +728,13 @@ div.page-wrapper .score-column1.product_categories {
         }
     }
     .score-column1.product_banner_text {
-            position: initial;
+            position: relative;
+            left: auto;
             width: 100%;
             background-color: rgba(0,0,0,.5);
             color: white;
-            padding: 0px;
-            margin: 10px auto;
+            padding: 10px;
+            margin: 20px auto;
             .score-center {
                 div:first-child {
                     font-size: 24px;

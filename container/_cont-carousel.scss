@@ -65,9 +65,6 @@
         position: absolute;
         right: 0;
         bottom: -50px;
-        @media only screen and (max-width: 480px) {
-            right: -160px;
-        }
         .score-button{
             width: 100px;
             height: 40px;
@@ -76,19 +73,23 @@
     }
     .score-carousel-pane-body{
         position: absolute;
-        right: 200px;
-        bottom: 100px;
+        right: 15%;
+        top: 10%;
         text-align: right;
         .score-content-spot{
             font-weight: bold;
-            margin-bottom: 200px;
+            margin-bottom: 0;
             text-align: right;
             p{
-                font-size: 30px !important;
+                font-size: 20px !important;
                 color: #333;
             }
         }
-        
+        .score-button{
+            width: 100px;
+            height: 40px;
+            line-height: 30px;
+        }
     }
 }
 .home-carousel-style .score-column2.wide-left{
